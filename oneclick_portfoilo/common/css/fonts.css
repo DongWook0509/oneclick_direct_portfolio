@@ -1,0 +1,28 @@
+/* S-Core Dream font */
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquare/NanumSquare-Bold.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquare/NanumSquare-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquare/NanumSquare-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: url('../fonts/NanumSquare/NanumSquare-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}

@@ -1,0 +1,260 @@
+/* =================================================================== 
+Common
+=================================================================== */
+* {
+    font-family: 'NanumSquare';
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================== 
+Header
+=================================================================== */
+
+.headerType{
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header_inner {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+}
+
+.header_logo .onclick_logo{
+    padding: 19px 0;
+    vertical-align: top 
+}
+
+.header_menu ul {
+    display: flex;
+}
+
+.header_menu ul li {
+    margin-left: 55px;
+}
+
+.header_menu ul li a {
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 140%;
+    letter-spacing: -0.64px;
+}
+
+.mobail_button {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* =================================================================== 
+footer 
+=================================================================== */
+
+
+.footerType{
+    background:#222222;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 32px 0;
+    max-width: 1200px;
+}
+
+.footerType .ain_logo {
+    display: inline-block;
+    width: 42px;
+    height: 29px;
+    background:url('../../common/image/ain_logo.png') no-repeat center;
+}
+
+.personal_informaiton a:first-child{
+    margin-right: 26px;
+}
+
+.personal_informaiton a {
+    color: #AAA;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 220%;
+}
+
+.footer_middle p {
+    color: #888888;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 220%;
+
+}
+
+.top_button {
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 85px;
+    background: #3B3B3B;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 10px;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+
+
+/*태블릿*/
+
+@media screen and (max-width: 768px) {
+
+    .headerType{
+        background: #FFF;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.06);
+    }
+    
+    .header_inner {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+    }
+    
+    .header_logo .onclick_logo{
+        padding: 19px 0;
+        vertical-align: top 
+    }
+    
+    .header_menu ul {
+        display: none;
+    }
+    
+    .header_menu ul li {
+        margin-left: 55px;
+    }
+    
+    .header_menu ul li a {
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 140%;
+        letter-spacing: -0.64px;
+    }
+    
+    .mobail_button{
+        display: block;
+        text-indent: -9999px;
+        border: none;
+        width: 30px;
+        height: 30px;
+        background : url("../../common/image/mobail_button_logo.png") repeat center;
+    }
+
+    .footer_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 32px 0;
+        max-width: 90%;
+    }
+}
+
+/*모바일*/
+
+@media screen and (max-width: 480px) {
+    .footerType{
+        background:#222222;
+    }
+    
+    .footer_inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 32px 0;
+        max-width: 90%;
+        height: 40vh;
+    }
+    
+    .footerType .ain_logo {
+        position: absolute;
+        bottom: 85%;
+        display: inline-block;
+        width: 42px;
+        height: 29px;
+        background:url('../../common/image/ain_logo.png') no-repeat center;
+    }
+    
+    .personal_informaiton a:first-child{
+        margin-right: 26px;
+    }
+    
+    .personal_informaiton a {
+        color: #AAA;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 220%;
+    }
+    
+    .footer_middle p {
+        color: #888888;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 220%;
+    
+    }
+    
+    .top_button {
+
+        position: absolute;
+        bottom: 83%;
+        left: 90%;
+
+        border: none;
+        width: 34px;
+        height: 34px;
+        border-radius: 85px;
+        background: #3B3B3B;
+    
+        color: #FFF;
+        text-align: center;
+        font-size: 10px;
+        font-family: Noto Sans KR;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+    }
+}
