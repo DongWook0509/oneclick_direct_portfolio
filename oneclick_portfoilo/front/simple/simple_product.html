@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../common/css/fonts.css">
+
+    <link rel="stylesheet" href="../simple/css/simple_product.css">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="mainType">
+
+        <!--header-->
+        <header class="headerType">
+            <div class="header_inner">
+                <!--header logo-->
+                <i class="header_logo">
+                    <a href="#">
+                        <img src="../../common/image/oneclickLogo.png" alt="onclick_logo" class="onclick_logo">
+                    </a>
+                </i>
+                
+                <!--header nav-->
+                <nav class=header_menu>
+                    <ul>
+                        <li><a href="#">보장분석 표기</a></li>
+                        <li><a href="#">광고비안내사항</a></li>
+                        <li><a href="#">고객목록</a></li>
+                        <li><a href="#">계약관리</a></li>
+                        <li><a href="#">자료실</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                        <li><a href="#">문의하기</a></li>
+                    </ul>
+                </nav>
+
+                <button class="mobail_button">모바일버튼</button>
+            </div>
+        </header>
+
+        <!--body-->
+        <div class="body_container">
+           <!--insurance_profile-->
+           <div class="simple_producet">
+              
+               <div class="insurance_profile">
+                <div class="insurance_info">
+                    <!-- tablet-->
+                    <div class="tablet_insurance_information">
+
+                        <div class="mobile_insurance_tagname">
+                            
+                            <span class="client_name">이름</span>
+                            <input type="text" class="client_input">
+
+                            <div class="fetal_box">
+                                <span class="fetal_yn">태아여부</span>
+                                <input type="checkbox" class="fetal_check" id ="fetal_check" name="fetal_check">
+                                <label for="fetal_check" class="fetal"><label>
+                            </div>
+                        
+                        </div>
+
+                        <div class="moblie_insurance_birthday">
+                            <span class="birth">생년월일</span>
+                            <select name="birth_date"class="birth_date">
+                                <option value="date">1995-05-01</option>
+                                <option value="date">1995-05-02</option>
+                                <option value="date">1995-05-03</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- tablet-->
+
+                    <!--tablet-->
+
+                    <div class="tablet_insurance_gender">
+                        <span class="age">만 40세</span>
+                        
+                        <div class="mobile_insurance_gender">
+                            <span class="gender_yn">성별구분</span>
+                            <label class="gender_man">
+                                <span class="man">남성</span>
+                                <input type="radio" name="gender" value="man_radio" class="man_radio" />
+                            </label>
+                            <label class="gender_female">
+                                <span class="female">여성</span>
+                                <input type="radio" name="gender" value="woman_radio" class="woman_radio" />
+                            </label>
+                        </div>
+
+                    </div>
+                    <!--tablet-->
+                </div>
+
+                <div class="insurance_choice">
+                    <div class="insurance_choice_left">
+                        <span class="insurance_gubun">보험사구분</span>
+                        <label class="insurance_loss">
+                            <span class="loss">손해보험</span>
+                            <input type="radio" name="insurance_radio" value="loss_radio" class="loss_radio"/>
+                        </label>
+                        <label class="insurance_life">
+                            <span class="life">생명보험</span>
+                            <input type="radio" name="insurance_radio" value="life_radio" class="life_radio" />
+                        </label>
+                    </div>
+
+
+                    <div class="insurance_choice_right">
+                        <span>상품구분</span>
+                        <div class="select">
+                            <div class="selected">
+                              <div class="selected-value">운전자보험</div>
+                            </div>
+                            <ul>
+                              <li class="option">자동차보험</li>
+                              <li class="option">운전자보험</li>
+                              <li class="option">상해보험</li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                </div>
+                
+                <div class="insurance_drive">
+
+                    <div class="insurance_drive_left">
+                        <span class="driver_type">운전형태</span>
+                        <label class="drive_private">
+                            <span class="private_car">자가용</span>
+                            <input type="radio" name="drive_radio" value="private_radio" class="private_radio"/>
+                        </label>
+                        <label class="drive_business">
+                            <span class="business_car">영업용</span>
+                            <input type="radio" name="drive_radio" value="business_radio" class="business_radio" />
+                        </label>
+                        <label class="drive_none">
+                            <span class="no_car">미운전</span>
+                            <input type="radio" name="drive_radio" value="nocar_radio" class="nocar_radio" />
+                        </label>
+                    </div>
+                    
+                    <div class="insurance_drive_right">
+                        <span>상해급수</span>
+                        <button class="first_grade">1</button>
+                        <button class="second_grade">2</button>
+                        <button class="three_grade">3</button>
+                        <button class="four_grade">4</button>
+                        <button class="five_grade">5</button>
+                    </div>
+
+                </div>
+                
+                <div class="searching_wrap">
+                    <button><img src="../../common/image/search_Icon.svg" class="search_icon" alt="버튼로고">지금 찾아보기</button>
+                </div>
+                
+            </div>
+
+                 <!--insurance -->
+               <div class="insurance_proposal">
+                    <div class="proposal_info">
+                        <span>40세 남성</span>
+                    </div>
+                    
+                    <div class="proposal_line"></div>
+                    
+                    <div class="personal_channel">
+                        <div class="proposal_top_channel">
+                            <ul class="index_display">
+                                <li>지수표시</li>
+                                <span>종합지수</span>
+                            </ul>
+                            <ul class="sales channel">
+                                <li>판매채널</li>
+                                <span>온라인가입 + 설계사기입</span>
+                            </ul>
+                        </div>
+                        <div class="proposal_under_channel">
+                            <ul class="insurance_period">
+                                <li>보험기간</li>
+                                <span>10년</span>
+                            </ul>
+                            <ul class="payment_period">
+                                <li>납입기간</li>
+                                <span>10년</span>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="channel_result">
+                        <p>위 조건으로 <span class="channel_total">총 17개 상품</span>을 찾았습니다.</p>
+                    </div>
+                    
+                    <div class="channel_type">
+                        <div class="exponential_high">
+                            지수 높은순
+                        </div>
+                        <div class="insurancefee_low">
+                            보험료 낮은순 
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="swiper_title">
+                                                <img src="../../common/image/hanwha.png" alt="slide_hanwha" class="slide_hanwha">
+                                                <a href="#" class="slider_a_tag">
+                                                    <img src="../../common/image/stroke.png" alt="stroke" class="stroke" class="stroke">
+                                                </a>
+                                            </div>
+                                            <span class="swiper_main_title">(무)한화손해보험 GK2500 든든 운전자보험</span>
+                                            <div class="swiper_content">
+                                                <div class="insurance_design">
+                                                    <span>설계유형</span>
+                                                    <span>기본플랜</span>
+                                                </div>
+                                                <div class="insurance_pay">
+                                                    <span>보험료</span>
+                                                    <span>월 2.500원</span>
+                                                </div>
+                                            </div>
+                                            <div class="inusrance_swiper_button">
+                                                <button class="detail_button">상세설계</button>
+                                                <button class="compare_button">비교담기</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="swiper_title">
+                                                <img src="../../common/image/hyndal.png" alt="slide_hyndal" class="slide_hyndal">
+                                                <a href="#" class="slider_a_tag">
+                                                    <img src="../../common/image/stroke.png" alt="stroke" class="stroke" class="stroke">
+                                                </a>
+                                            </div>
+                                            <span class="swiper_main_title">(무)한화손해보험 GK2500 든든 운전자보험</span>
+                                            <div class="swiper_content">
+                                                <div class="insurance_design">
+                                                    <span>설계유형</span>
+                                                    <span>운전사 실속형</span>
+                                                </div>
+                                                <div class="insurance_pay">
+                                                    <span>보험료</span>
+                                                    <span>월 5.600원</span>
+                                                </div>
+                                            </div>
+                                            <div class="inusrance_swiper_button">
+                                                <button class="detail_button">상세설계</button>
+                                                <button class="compare_button">비교담기</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="swiper_title">
+                                                <img src="../../common/image/slide_axa.png" alt="axa" class="slide_axa">
+                                                <a href="#" class="slider_a_tag">
+                                                    <img src="../../common/image/stroke.png" alt="stroke" class="stroke" class="stroke">
+                                                </a>
+                                            </div>
+                                            <span class="swiper_main_title">(무)한화손해보험 GK2500 든든 운전자보험</span>
+                                            <div class="swiper_content">
+                                                <div class="insurance_design">
+                                                    <span>설계유형</span>
+                                                    <span>운전자 표준형</span>
+                                                </div>
+                                                <div class="insurance_pay">
+                                                    <span>보험료</span>
+                                                    <span>월 6.900원</span>
+                                                </div>
+                                            </div>
+                                            <div class="inusrance_swiper_button">
+                                                <button class="detail_button">상세설계</button>
+                                                <button class="compare_button">비교담기</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="swiper_title">
+                                                <img src="../../common/image/hanwha.png" alt="slide_hanwha" class="slide_hanwha">
+                                                <a href="#" class="slider_a_tag">
+                                                    <img src="../../common/image/stroke.png" alt="stroke" class="stroke" class="stroke">
+                                                </a>
+                                            </div>
+                                            <span class="swiper_main_title">(무)한화손해보험 GK2500 든든 운전자보험</span>
+                                            <div class="swiper_content">
+                                                <div class="insurance_design">
+                                                    <span>설계유형</span>
+                                                    <span>기본플랜</span>
+                                                </div>
+                                                <div class="insurance_pay">
+                                                    <span>보험료</span>
+                                                    <span>월 2.500원</span>
+                                                </div>
+                                            </div>
+                                            <div class="inusrance_swiper_button">
+                                                <button class="detail_button">상세설계</button>
+                                                <button class="compare_button">비교담기</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="swiper_title">
+                                                <img src="../../common/image/hyndal.png" alt="slide_hyndal" class="slide_hyndal">
+                                                <a href="#" class="slider_a_tag">
+                                                    <img src="../../common/image/stroke.png" alt="stroke" class="stroke" class="stroke">
+                                                </a>
+                                            </div>
+                                            <span class="swiper_main_title">(무)한화손해보험 GK2500 든든 운전자보험</span>
+                                            <div class="swiper_content">
+                                                <div class="insurance_design">
+                                                    <span>설계유형</span>
+                                                    <span>운전사 실속형</span>
+                                                </div>
+                                                <div class="insurance_pay">
+                                                    <span>보험료</span>
+                                                    <span>월 5.600원</span>
+                                                </div>
+                                            </div>
+                                            <div class="inusrance_swiper_button">
+                                                <button class="detail_button">상세설계</button>
+                                                <button class="compare_button">비교담기</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="swiper_title">
+                                                <img src="../../common/image/slide_axa.png" alt="axa" class="slide_axa">
+                                                <a href="#" class="slider_a_tag">
+                                                    <img src="../../common/image/stroke.png" alt="stroke" class="stroke" class="stroke">
+                                                </a>
+                                            </div>
+                                            <span class="swiper_main_title">(무)한화손해보험 GK2500 든든 운전자보험</span>
+                                            <div class="swiper_content">
+                                                <div class="insurance_design">
+                                                    <span>설계유형</span>
+                                                    <span>운전자 표준형</span>
+                                                </div>
+                                                <div class="insurance_pay">
+                                                    <span>보험료</span>
+                                                    <span>월 6.900원</span>
+                                                </div>
+                                            </div>
+                                            <div class="inusrance_swiper_button">
+                                                <button class="detail_button">상세설계</button>
+                                                <button class="compare_button">비교담기</button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  
+
+                            <div class="slide_modum"> 
+                                <div class="swiper-button-prev"><img src="../../common/image/left_slider_angle.png" alt="left_slider_angle" class="left_slider_angle"></div>
+                                <div class="swiper-button-next"><img src="../../common/image/right_slider_angle.png" alt="right_slider_angle" class="right_slider_angle"></div>
+                            </div>
+                    </div> <!--슬라이드-->
+                        
+                    <div class="button_recommend_wrap">
+                        <div class="button_recomend_left">
+                            <div>
+                                한화-운전자 기본플랜
+                                <a href="#">
+                                    <img src="../../common/image/close_circle.png" alt="close_circle" class="close_circle">
+                                </a>
+                            </div>
+                            <div>
+                                현대-운전자 신속플랜
+                                <a href="#">
+                                    <img src="../../common/image/close_circle.png" alt="close_circle" class="close_circle">
+                                </a>
+                            </div>
+                            <div>
+                                AXA-운전자 실속플랜
+                                <a href="#">
+                                    <img src="../../common/image/close_circle.png" alt="close_circle" class="close_circle">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="button_recomend_right">
+                            <button>상품비교 <img src="../../common/image/compare_arrow.png" alt="compare_arrow" class="compare_arrow"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer class="footerType">
+            <div class="footer_inner" >
+                <i class="ain_logo"></i>
+                
+                <div class="footer_middle">
+                    <div class="personal_informaiton">
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                    </div>
+                    <p>
+                        주식회사에인   서울특별시 성동구 아차산로 33, 9층 1호(성수동1가, 삼일빌딩)     사업자등록번호 : 117-87-01439  <br>
+                        대표번호 Tel : 02-6952-5542      통신판매업 : 제 2019-서울성동-01404호     대표이사 김태열 <br>
+                        Copyright 2020. Ain All Rights Reserved.
+                    </p>
+                </div>
+                
+                <button class="top_button">
+                    TOP
+                </button>
+                
+            </div>
+        </footer>
+    </div>
+    <script src="../simple/js/simple_product.js"></script>
+    
+
+</body>
+</html>
+
+
