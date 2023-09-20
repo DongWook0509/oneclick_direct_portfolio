@@ -5,16 +5,6 @@ Common
     font-family: 'NanumSquare';
 }
 
-
-
-
-
-
-
-
-
-
-
 /* =================================================================== 
 Header
 =================================================================== */
@@ -85,7 +75,7 @@ footer
 
 .footerType .ain_logo {
     display: inline-block;
-    width: 42px;
+    width: 75px;
     height: 29px;
     background:url('../../common/image/ain_logo.png') no-repeat center;
 }

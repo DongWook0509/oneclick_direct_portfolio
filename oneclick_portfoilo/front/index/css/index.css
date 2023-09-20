@@ -296,7 +296,7 @@
 
 
 /*태블릿*/
-@media screen and (max-width:1439px) {
+@media screen and (max-width:1279px) {
 
     .bodyType h2 {
         display: none;
@@ -604,7 +604,7 @@
 
 
 /*모바일*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
 
     .bodyType h2 {
         display: none;

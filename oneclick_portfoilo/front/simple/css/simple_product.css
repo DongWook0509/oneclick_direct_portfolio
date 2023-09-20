@@ -817,7 +817,7 @@ input#fetal_check:checked + label:before{
         padding-left: 4px;
     }
 
-  @media screen and (max-width:1439px) {
+  @media screen and (max-width:1279px) {
     .body_container{
         background: #f5f5f5;
     }
@@ -1626,10 +1626,8 @@ input#fetal_check:checked + label:before{
         }
     
         .button_recomend_left{
-            
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start;
             margin-bottom: 25px;
         }
         
@@ -1640,7 +1638,7 @@ input#fetal_check:checked + label:before{
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 185px;
+            width: 26%;
             height: 35px;
             padding: 8px 34px;
             white-space: nowrap;
@@ -1699,7 +1697,7 @@ input#fetal_check:checked + label:before{
         }
     }
 
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:767px) {
         .body_container{
             background: #f5f5f5;
         }
@@ -1828,7 +1826,7 @@ input#fetal_check:checked + label:before{
         .birth_date {
             margin: 0;
             padding-left: 14px;
-            width: 34%;
+            width: 47%;
             height: 42px;
             color: #222;
             font-size: 14px;
@@ -1845,10 +1843,13 @@ input#fetal_check:checked + label:before{
         .tablet_insurance_gender {
             width: 90%;
             display: flex;
+            flex-direction: column;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
         }
-    
+        .mobile_insurance_gender {
+            margin-top: 10px;
+        }
         .age::after{
             content: "";
             width: 1px;
@@ -1896,7 +1897,7 @@ input#fetal_check:checked + label:before{
             flex-direction: column;
             align-items: flex-start;
             max-width: 80%;
-            padding: 30px 0;
+            padding: 30px  0;
             margin: 0 auto;
             border : 1px solid #D9D9D9;
             border-left: none;
@@ -1911,12 +1912,13 @@ input#fetal_check:checked + label:before{
         }
         
         .insurance_choice_left{
+            white-space: nowrap;
             padding-bottom: 25px;
         }
     
         .insurance_gubun {
             display: inline-block;
-            margin-right: 25px;
+            margin-right: 6px;
         }
         
         .insurance_gubun, .product_gubun{
@@ -1929,6 +1931,7 @@ input#fetal_check:checked + label:before{
         }
         
         .loss, .life {
+            white-space: nowrap;
             color: #222;
             font-size: 14px;
             font-style: normal;
@@ -2024,9 +2027,11 @@ input#fetal_check:checked + label:before{
         }
         
         .drive_private, .drive_business, .drive_none {
+            width: 30%;
+            white-space: nowrap;
             font-size: 18px;
             line-height: 2rem;
-            padding: 0.2em 0.4em;
+            padding: 0;
             vertical-align: 0;
         }
             
@@ -2050,6 +2055,7 @@ input#fetal_check:checked + label:before{
         } 
         
         .insurance_choice_right > span {
+            white-space: nowrap;
             margin-right: 16px;
             color: #222;
             font-size: 14px;
@@ -2062,7 +2068,7 @@ input#fetal_check:checked + label:before{
         .select {
             display: inline-block;
             text-align: center;
-            width: 210px;
+            width: 180px;
             padding: 6px 0 ;
             border-radius: 4px;
             background-color: white;
@@ -2093,13 +2099,13 @@ input#fetal_check:checked + label:before{
             
         .select ul {
             text-align: center;
-            width: 210px;
+            width: 180px;
             border: 1px solid #DDDDDD;
             display: none;
             position: absolute;
             background: #fff;
             border-top: none;
-            margin: 7px 0 0 -105px;
+            margin: 7px 0 0 -90px;
             cursor: pointer;
         }
             
@@ -2213,6 +2219,7 @@ input#fetal_check:checked + label:before{
             }
         
             .personal_channel ul>li {
+            white-space: nowrap;
             color: #222;
             font-size: 14px;
             font-style: normal;
@@ -2264,8 +2271,9 @@ input#fetal_check:checked + label:before{
         
             .channel_type {
             display: flex;
-            margin-top: 21px;
-            margin-left: 40px;
+            width: 80%;
+            padding-top: 21px;
+            margin:0 auto;
             }
         
             .channel_type .exponential_high {
@@ -2408,6 +2416,7 @@ input#fetal_check:checked + label:before{
                 margin: 0 70px;
             }
             .inusrance_swiper_button .detail_button{
+                white-space: nowrap;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -2427,6 +2436,7 @@ input#fetal_check:checked + label:before{
             }
         
             .inusrance_swiper_button .compare_button{
+                white-space: nowrap;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -2521,7 +2531,6 @@ input#fetal_check:checked + label:before{
                 
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 margin-bottom: 25px;
             }
             
@@ -2532,13 +2541,13 @@ input#fetal_check:checked + label:before{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 185px;
+                width: 41%;
                 height: 35px;
-                padding: 8px 34px;
+                padding: 20px 34px;
                 white-space: nowrap;
                 color:#1A458D;
                 text-align: center;
-                font-size: 13px;
+                font-size: 11px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 160%; /* 20.8px */
@@ -2559,7 +2568,7 @@ input#fetal_check:checked + label:before{
                 margin: 0 20px;
                 margin-bottom: 10px;
             }
-    
+            
             .button_recomend_left div:last-child{
                 margin: 0 20px;
                 margin-bottom: 10px;
@@ -2580,7 +2589,7 @@ input#fetal_check:checked + label:before{
                 border : 1px solid #4745B5;
                 color: #FFF;
                 text-align: center;
-                font-size: 13px;
+                font-size: 10px;
                 font-style: normal;
                 font-weight: 800;
                 line-height: 140%; /* 18.2px */
